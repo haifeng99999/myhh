@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>影视空投 - 智慧农业科技领航者</title>
+    <link href="https://cdn.bootcdn.net/ajax/libs/twitter-bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #2B5F3B; /* 深绿色 */
+            --secondary-color: #3A8FB7; /* 科技蓝 */
+        }
+
+        /* 自定义样式 */
+        .navbar {
+            background: rgba(255,255,255,0.95) !important;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        #hero {
+            height: 80vh;
+            background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+                        url('https://images.unsplash.com/photo-1625246333195-78d9c38ad449?ixlib=rb-1.2.1&auto=format&fit=crop&w=1920&q=80');
+            background-size: cover;
+            display: flex;
+            align-items: center;
+        }
+
+        .tech-card {
+            border: none;
+            transition: transform 0.3s;
+        }
+        .tech-card:hover {
+            transform: translateY(-10px);
+        }
+
+        .case-study {
+            position: relative;
+            overflow: hidden;
+        }
+        .case-study img {
+            transition: transform 0.5s;
+        }
+        .case-study:hover img {
+            transform: scale(1.1);
+        }
+
+        .stats-number {
+            font-size: 2.5rem;
+            color: var(--primary-color);
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <!-- 导航栏 -->
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="logo.png" alt="影视空投" height="40">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link active" href="#">首页</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#solutions">解决方案</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#tech">核心技术</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#cases">成功案例</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">联系我们</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Banner区 -->
+    <section id="hero">
+        <div class="container text-center text-white">
+            <h1 class="display-4 mb-4">用空投科技重塑现代农业</h1>
+            <p class="lead mb-4">无人机精准作业 | AI智能决策 | 全链路数字化管理</p>
+            <button class="btn btn-lg btn-primary">立即预约演示</button>
+        </div>
+    </section>
+
+    <!-- 数据看板 -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-md-3">
+                    <div class="stats-number">5000+</div>
+                    <div class="text-muted">服务农田(亩)</div>
+                </div>
+                <div class="col-md-3">
+                    <div class="stats-number">68%</div>
+                    <div class="text-muted">平均增效</div>
+                </div>
+                <div class="col-md-3">
+                    <div class="stats-number">200+</div>
+                    <div class="text-muted">合作农场</div>
+                </div>
+                <div class="col-md-3">
+                    <div class="stats-number">24/7</div>
+                    <div class="text-muted">全天候支持</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 核心解决方案 -->
+    <section id="solutions" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">智慧农业解决方案</h2>
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-3">
+                    <div class="card tech-card h-100">
+                        <img src="drone-icon.png" class="card-img-top" alt="精准空投">
+                        <div class="card-body">
+                            <h5>智能空投系统</h5>
+                            <p>厘米级定位精度，支持播种/施肥/施药一体化作业</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- 其他解决方案卡片类似结构 -->
+            </div>
+        </div>
+    </section>
+
+    <!-- 成功案例 -->
+    <section id="cases" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-5">成功案例</h2>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="case-study">
+                        <img src="case1.jpg" class="img-fluid rounded" alt="东北玉米田案例">
+                        <div class="p-3 bg-white">
+                            <h5>东北万亩玉米田</h5>
+                            <p>无人机播种效率提升5倍，增产20%</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- 其他案例类似结构 -->
+            </div>
+        </div>
+    </section>
+
+    <!-- 联系表单 -->
+    <section id="contact" class="py-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <h2>即刻开启智慧农业</h2>
+                    <p>填写需求获取定制方案</p>
+                </div>
+                <div class="col-md-6">
+                    <form>
+                        <div class="mb-3">
+                            <input type="text" class="form-control" placeholder="姓名">
+                        </div>
+                        <div class="mb-3">
+                            <input type="tel" class="form-control" placeholder="联系电话">
+                        </div>
+                        <div class="mb-3">
+                            <textarea class="form-control" rows="3" placeholder="您的需求"></textarea>
+                        </div>
+                        <button class="btn btn-primary w-100">提交需求</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://cdn.bootcdn.net/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // 导航栏滚动效果
+        window.addEventListener('scroll', function() {
+            if (window.scrollY > 50) {
+                document.querySelector('.navbar').classList.add('scrolled');
+            } else {
+                document.querySelector('.navbar').classList.remove('scrolled');
+            }
+        });
+
+        // 案例交互效果
+        document.querySelectorAll('.case-study').forEach(item => {
+            item.addEventListener('mouseenter', function() {
+                this.querySelector('img').style.transform = 'scale(1.1)';
+            });
+            item.addEventListener('mouseleave', function() {
+                this.querySelector('img').style.transform = 'scale(1)';
+            });
+        });
+    </script>
+</body>
+</html>
